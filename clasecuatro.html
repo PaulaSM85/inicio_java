@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase cuatro---Javascript</title>
+</head>
+<body>
+    <script>
+      //   let edad= +prompt("ingrese su edad");
+      /*  if (edad > 0 && edad <4 ) alert("usted es un bebé");
+        else if(edad >=4 && edad <12) alert("usted es un nene");
+        else if (edad >12 && edad <18) alert("usted es un adolescente");
+        else if (edad >=18 && edad <60) alert("usted es un adulto");
+        else if (edad >=60 && edad <80) alert("usted es un adulto mayor");
+        else if (edad >=80 && edad <120) alert("usted es un adulto mayor");
+        else alert("usted no es un humano"); */
+
+
+      /*    if(edad<18 || edad>= 35) alert("usted no esta en la categoria joven");
+            else alert("ud esta en la categoria joven"); */
+
+         //  let fechayhora = new Date(); //variable de info fecha y hora
+         //  let numerodia = //fechayhora.getMinutes();
+          // let hora = fechayhora.getHours();
+          // let nombredia =  //fechayhora.getDate();
+          // consol.log(dia);
+          // console.log(hora);
+          // console.log(fechayhora);
+          //  console.log(numero); //imprime el numero de minutos
+/* 
+           let numerodia = "";
+           if(numerodia==0) nombredia = "Domingo";
+           else if(numerodia==1) nombredia = "Lunes";
+           else if(nombredia==2) nombredia = "Martes";    CORREGIR
+           else if(nombredia==6) nombredia = "Sabado";
+           else if(nombredia==3) nombredia = "Miercoles";
+           else if(nombredia==4) nombredia = "Jueves";
+           else if(nombredia==5) nombredia = "Viernes";
+
+           document.write("el numero de dia es : " +numerodia + "<br>");
+           document.write("hoy es : " + nombredia); */
+
+           /* let fechayhora = new Date();
+           let numerodia = ; //fechayhora.getDay(); String
+           let nombredia = "";
+
+           switch(numerodia) {
+            case 0:
+                nombredia = "Domingo";    //puedo ingresar los num con letras modificando todo
+                break;
+                case 1:
+                    nombredia = "Lunes";
+                    break;
+                 case 2:
+                    nombredia = "Martes";
+                    break;
+                case 3:
+                    nombredia = "Miercoles";
+                    break;
+                case 4:
+                    nombredia = "Jueves";
+                        break;
+                case 5:
+                    nombredia = "Viernes";
+                            break;
+                case 6:
+                    nombredia = "Sabado";
+                                break;
+                default:
+                    nombredia = "desconocido";
+                                    break;
+                                
+
+           }
+           document.write("el numero de dia es : " +numerodia + "<br>");
+           document.write("hoy es : " + nombredia);
+ */
+
+
+
+    /*        let fechayhora = new Date();
+           let numerodia = ; //fechayhora.getDay(); String
+           let nombredia = "";
+
+           switch(numerodia) {
+            case 0:
+            case 6:
+            nombredia = "Fin de semana";
+                   
+                    break;
+                 case 1:
+                   
+                case 2:
+                    
+                case 3:
+                    
+                case 4:
+                   
+                case 5:
+               nombredia = "Dia laboral";
+                                break;
+                default:
+                    nombredia = "desconocido";
+                                    break;
+                                
+
+           }
+           document.write("el numero de dia es : " +numerodia + "<br>");
+           document.write("hoy es : " + nombredia); */
+
+
+
+         //VERSION SIMPLE
+
+         /*   let fechayhora = new Date();
+           let numerodia = 2; //fechayhora.getDay(); String
+           let nombredia = "";
+
+
+           if(numerodia==0 || numerodia==6) document.write("hoy es fin de semana");
+           else document.write("hoy es dia laboral"); */
+
+          // document.write("el numero de dia es : " +numerodia + "<br>");
+          // document.write("hoy es : " + nombredia);
+
+
+          //VERSION COMPLETA
+
+        /*   let fechayhora = new Date();
+           let numerodia = 6; //fechayhora.getDay(); String
+           let nombredia = "";
+
+
+           if(numerodia==0 || numerodia==6) document.write("hoy es fin de semana");
+           else if (numerodia < 0 || numerodia> 6) document.write("hoy es dia laboral");
+           else document.write("hoy es dia laboral"); */
+
+           /* let fechayhora = new Date();
+           let numerodia = 3; //fechayhora.getDay(); String
+           let nombredia = "";
+
+
+           document.write ((numerodia==0 || numerodia==6)? "hoy es fin de semana"
+           : "hoy es dia laboral"); */
+
+         /*   let fechayhora = new Date();
+           let numerodia = 6; //fechayhora.getDay(); String
+           let nombredia = "";
+
+
+           document.write ((numerodia==0 || numerodia==6)? "hoy es fin de semana" 
+           : (numerodia < 0 || numerodia> 6)? "hoy es dia desconocido"
+        : "hoy es dia laboral"); */
+
+        let fechayhora = new Date();
+           let numerodia = 3; //fechayhora.getDay(); String
+           let nombredia = "";
+
+        
+          nombredia= (numerodia==0)?  "Domingo"
+          : (numerodia==1)?  "Lunes"
+          : (numerodia==2)?  "Martes"  
+          : (numerodia==3)? "Miercoles"
+          : (numerodia==4)? "Jueves"
+          : (numerodia==5)? "Viernes"
+          : (numerodia==6)? "Sabado"
+          : "Dia invalido";
+       
+
+           document.write("el numero de dia es : " +numerodia + "<br>");
+           document.write("hoy es : " + nombredia);
+       
+        
+
+
+
+
+        </script>
+    
+</body>
+</html>
